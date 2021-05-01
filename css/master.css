@@ -10,7 +10,6 @@
 .container .logo {
   width: 150px;
   height: 40px;
-  
   color: white;
   background-color: #463cf7;
   margin-bottom: 15px;
@@ -22,7 +21,7 @@
 }
 
 .container .box .col {
-  width: calc((100% - 60px - 50px ) / 4);
+  width: calc((100% - 60px - 50px ) / 4);  /* margin-left:50px , spaces:60px */
   border: 4px solid #CCC;
   background-color: #EEE;
 }
@@ -58,23 +57,33 @@
 
 .container .box .col .text .price {
   background-color: #EEE;
+  font-size: 14px;
   color: #333;
-  font-weight: bold;
   width: 60px;
   height: 20px;
   position: absolute;
   left: 50%;
   bottom: 0;
-  margin-bottom: -6px;
+  margin-bottom: -9px;
   margin-left: -30px;
 }
 
-.container .box .col .text .price.flex{
-  width: 100px;
+.container .box .col .text .price.offer {
+  width: 90px;
   margin-left: -45px;
+  color: orangered;
 }
 
-.container .box .col .text .price.flex span:first-child{
+.container .box .col .text .price.offer span {
+  display: inline-block;
+  margin-right: 3px;
+  color: #333;
+  text-decoration: line-through;
+  font-size: small;
+}
+
+
+/* .container .box .col .text .price.flex span:first-child{
   margin-right: 10px;
   font-size: small;
   text-decoration: line-through;
@@ -82,7 +91,7 @@
 
 .container .box .col .text .price.flex span:last-child{
   color: orangered;
-}
+} */
 
 .flex {
   display: flex;
